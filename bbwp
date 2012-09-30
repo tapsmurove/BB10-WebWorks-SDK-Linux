@@ -1,0 +1,9 @@
+#!/bin/sh
+BBWP_DIR=`dirname "$0"`
+
+## thanks rory
+if [ `uname` = "Darwin" ]; then
+	"$BBWP_DIR/dependencies/node/node.mac" "$BBWP_DIR/lib/bbwp.js" "$@"
+	else
+	"$BBWP_DIR/dependencies/node/node.linux" "$BBWP_DIR/lib/bbwp.js" "$@"
+fi

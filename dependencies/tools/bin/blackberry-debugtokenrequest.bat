@@ -1,0 +1,1 @@
+@java -cp "%~dp0\..\lib\EccpressoJDK15ECC.jar;%~dp0\..\lib\EccpressoAll.jar;%~dp0\..\lib\BarPackager.jar;%~dp0\..\lib\BarSigner.jar;%~dp0\..\lib\DebugTokenRequest.jar" net.rim.device.codesigning.debugtoken.DebugTokenRequest %*
