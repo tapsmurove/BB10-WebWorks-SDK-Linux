@@ -1,22 +1,48 @@
 This is the BB10 SDK 1.0.2.9 beta ported to linux.
-This sdk is based off of the windows install not the commuinty repo. we are in the works of getting it to work from the repo
 
-This repo is a ready to go webworks sdk for linux, windows and mac
+This repo is a ready to go webworks sdk  and ripple servies for linux
 
-What we had to do to port the sdk
+To get started u r computer need to have installed:
 
-compile node.js v0.6.10 for linux and put it in /dependencies/node/node.linux
+java (requied by BlackBerry)
+gcc-c++ (building nodejs)
+node (ripple services)
 
-move the mac node to /dependencies/node/node.mac
+get nodejs from nodejs.org
 
-chmod + x the files in /dependencies/tools/bin
+./configure
+make
+copy this folder into the "dependencies/node/"
 
-edit /lib/signing-helper.js 
+make install
 
-made bbwp for linux and mac
+then kudos
 
-thanks to 
+./rippleserver.sh (this will get you running ripple services)
 
-Joe Scott
+place your debugtoken (rename to debugtoken.bar) in sdk folder
 
-Rory Craig-Barnes (@roryboy)
+BLACKBERRY - Auth
+
+For signing, debuging and other authentication
+
+Please your author.p12, barsigner.csk, client-PBDT-xxxxxx.csj, client-RDK-xxxxxx.csj
+
+/home/{username}/.rim/		(if directory is not there, please create one)
+
+additional tools are found in /dependencies/tools/bin
+
+blackberry-debugtokenrequest -storepass <KeystorePassword> -devicepin <device PIN> <debug_token_file_name.bar>
+
+Tested on:
+
+openSUSE 12.2(64bit)
+Ubuntu 12.04(32bit)
+
+Thanks to badtoyz for webworks-linux-api's 
+
+https://github.com/badtoyz/BB10-WebWorks-SDK-Linux
+
+for any furthur information
+
+twitter: @kanishkablack
