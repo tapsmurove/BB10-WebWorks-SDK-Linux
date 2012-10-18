@@ -1,3 +1,4 @@
+# Config #
 This is the BB10 SDK 1.0.2.9 beta ported to linux.
 
 This repo is a ready to go webworks sdk  and ripple servies for linux
@@ -22,7 +23,7 @@ then kudos
 
 place your debugtoken (rename to debugtoken.bar) in sdk folder
 
-BLACKBERRY - Auth
+# BLACKBERRY - Auth #
 
 For signing, debuging and other authentication
 
@@ -34,7 +35,7 @@ additional tools are found in /dependencies/tools/bin
 
 blackberry-debugtokenrequest -storepass <KeystorePassword> -devicepin <device PIN> <debug_token_file_name.bar>
 
-Tested on:
+# Tested#
 
 openSUSE 12.2(64bit)
 Ubuntu 12.04(32bit)
@@ -45,4 +46,5 @@ https://github.com/badtoyz/BB10-WebWorks-SDK-Linux
 
 for any furthur information
 
-twitter: @kanishkablack
+#Contact#
+Anwesh (@kanishkablack)
